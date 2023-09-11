@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.main-container-login-index {
+  background: #eee;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.main-container-login-index .container-login1 {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px;
+  padding: 20px;
+}
+.main-container-login-index .container-login1 .welcome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 30px;
+}
+.main-container-login-index .container-login1 .welcome i {
+  color: blue;
+  font-size: 2.5rem;
+  margin: 10px;
+}
+.main-container-login-index .container-login1 .welcome p {
+  color: #7a7777;
+}
+.main-container-login-index .container-login1 form > div {
+  display: flex;
+  flex-direction: column;
+}
+.main-container-login-index .container-login1 form > div label {
+  margin: 0 0 0 5px;
+  color: #7a7777;
+}
+.main-container-login-index .container-login1 form > div p {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 15px;
+}
+.main-container-login-index .container-login1 form > div p input {
+  padding: 7px;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 1.1rem;
+  flex-grow: 1;
+}
+.main-container-login-index .container-login1 form > div p i {
+  color: #7a7777;
+  cursor: pointer;
+  position: relative;
+}
+.main-container-login-index .container-login1 form > div p i > i {
+  position: absolute;
+  font-size: 1.3rem;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.main-container-login-index .container-login1 form div.container-remember-me {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.main-container-login-index .container-login1 form div.container-remember-me .right {
+  margin-left: 50px;
+}
+.main-container-login-index .container-login1 form a.login {
+  display: flex;
+  border: none;
+  background: rgba(51, 51, 240, 0.879);
+  align-items: center;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  border-radius: 5px;
+  color: white;
+  padding-right: 5px;
+  padding: 10px 20px;
+}
+.main-container-login-index .container-login1 form a.login:hover {
+  color: rgb(55, 55, 171);
+}
+.main-container-login-index .container-login1 form a.login i {
+  margin-left: 10px;
+}
+.main-container-login-index .container-login1 form .new-account {
+  margin: 20px;
+}
+
+.hiddenPasswordEye {
+  opacity: 1 !important;
+}
+
+.showLogin {
+  opacity: 0 !important;
+}
+
+.showCreateNewAccount {
+  transform: translateY(0) !important;
+  opacity: 1 !important;
+}
+
+.hiddenCreateNewAccount {
+  transform: translateY(-100%) !important;
+  opacity: 0 !important;
+}
+
+.container-create-new-account {
+  position: absolute;
+  z-index: 2000;
+  top: 0;
+  border: 1px solid blue;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px;
+  padding: 30px;
+  transition: 0.7s ease;
+  transform: translateY(-100%);
+  opacity: 0;
+}
+.container-create-new-account .fa-times {
+  position: absolute;
+  right: 0;
+  margin: 10px;
+  font-size: 1.5rem;
+  top: -5px;
+  color: orangered;
+  cursor: pointer;
+}
+.container-create-new-account .fa-times:hover {
+  color: rgb(55, 55, 171);
+}
+.container-create-new-account .create-account {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container-create-new-account .create-account > i {
+  background: rgba(51, 51, 240, 0.879);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 10px;
+  font-size: 1.5rem;
+}
+.container-create-new-account .create-account span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.container-create-new-account form {
+  max-width: 500px;
+  min-width: 400px;
+}
+.container-create-new-account form .form-create-new-account {
+  width: 100%;
+}
+.container-create-new-account form .form-create-new-account > div {
+  width: 100%;
+}
+.container-create-new-account form .form-create-new-account > div label {
+  color: #7a7777;
+}
+.container-create-new-account form .form-create-new-account > div p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #7a7777;
+  color: #7a7777;
+  margin-bottom: 15px;
+}
+.container-create-new-account form .form-create-new-account > div p input {
+  flex-grow: 1;
+  background: none;
+  border: none;
+  padding: 7px;
+  outline: none;
+}
+.container-create-new-account form .form-create-new-account .container-create-account {
+  margin: 25px 0;
+}
+.container-create-new-account form .form-create-new-account .container-create-account > a {
+  background: rgba(51, 51, 240, 0.879);
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  transition: 0.5s ease;
+}
+.container-create-new-account form .form-create-new-account .container-create-account > a:hover {
+  background: rgb(55, 55, 171);
+  transform: scale(1.02);
+}
+.container-create-new-account form .form-create-new-account .container-create-account > a i {
+  padding-left: 5px;
+}
+.container-create-new-account form .form-create-new-account .container-text-down {
+  padding: 20px 0;
+}
+.container-create-new-account form .form-create-new-account .container-text-down p {
+  border-top: 1px solid #7a7777;
+  border-bottom: none;
+  padding: 20px 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-create-new-account form .form-create-new-account .container-social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-create-new-account form .form-create-new-account .container-social-media i {
+  padding: 0 10px;
+  font-size: 1.5rem;
+  transition: 0.2s ease;
+}
+.container-create-new-account form .form-create-new-account .container-social-media i:hover {
+  transform: scale(1.5);
+}
+.container-create-new-account form .form-create-new-account .container-social-media i.fa-twitter {
+  color: rgb(53, 149, 175);
+}
+.container-create-new-account form .form-create-new-account .container-social-media i.fa-pinterest {
+  color: orangered;
+}/*# sourceMappingURL=index.css.map */

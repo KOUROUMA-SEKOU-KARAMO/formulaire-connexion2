@@ -1,0 +1,143 @@
+.container-create-new-account{
+     position: absolute;
+      z-index: 2000;
+      top: 0;
+       border: 1px solid blue;
+       border-radius: 10px;
+       box-shadow: 1px 1px 10px ;
+       padding: 30px; 
+       transition: .7s ease;
+       transform : translateY(-100%);
+       opacity: 0;
+          .fa-times{
+               //  color:blue;
+                position: absolute;
+                right: 0;
+                margin: 10px ;
+                font-size: 1.5rem;
+                top: -5px; 
+                color: $colorRed;
+                cursor: pointer;
+                 &:hover{
+                     color: $colorHoverBtn;
+                 }
+          }
+       .create-account{
+           @include flexCenter1;
+            flex-direction: column;
+            >i{
+                background: $colorBlue2;
+               //   width: 40px;
+               //   height: 40px;
+                 border-radius: 50%;
+                 @include flexCenter1;
+                 color: $colorWhite;
+                 padding: 10px;
+                 font-size: 1.5rem;
+                  
+            }
+
+            span{
+                font-size: 1.2rem;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+       }
+
+
+       form{
+           max-width: 500px;
+           min-width: 400px;
+
+           .form-create-new-account{
+                width: 100%;
+
+                >div{
+                     width: 100%;
+                    
+                    label{
+                          color: $colorGray2;
+                    }
+                   p{
+                    @include flexCenter1;
+                     justify-content: space-between;
+                    border-bottom: 1px solid $colorGray2;
+                    color: $colorGray2;
+                    margin-bottom: 15px;
+                    input{
+                         flex-grow: 1;
+                         background: none;
+                         border: none;
+                         padding: 7px;
+                         outline:none;
+                    }
+                   }
+
+                }
+
+                .container-create-account{
+                    margin: 25px 0;
+
+                    >a{
+                          background: $colorBlue2;
+                          padding: 10px 20px;
+                          border-radius:5px;
+                          color: $colorWhite;
+                          @include flexCenter1;
+                          max-width: max-content;
+                         text-transform: capitalize;
+                         font-size: 1.2rem;
+                          transition: .5s ease;
+                         &:hover{
+                              background: $colorHoverBtn;
+                              transform: scale(1.02);
+                         }
+
+                         i{
+                              padding-left: 5px;
+                         }
+                    }
+                }
+
+                .container-text-down{
+
+                    // margin: 20px;
+                    padding: 20px 0;
+                    
+                     p{
+                          border-top:1px solid $colorGray2;
+                          border-bottom:none;
+                          padding:20px 0;
+                          text-align: center;
+                         @include flexCenter1;
+                     }
+                }
+
+                .container-social-media{
+                     
+                    @include flexCenter1;
+                    
+                    i{
+                         padding: 0 10px;
+                         font-size: 1.5rem;
+
+                         transition: .2s ease;
+                         &:hover{
+                               transform: scale(1.5)
+                         }
+
+                    }
+
+                    i.fa-twitter{
+                          color: rgb(53, 149, 175);
+                    }
+                    i.fa-pinterest{
+                          color: orangered;
+                    }
+                }
+
+
+           }
+            
+       }
+}

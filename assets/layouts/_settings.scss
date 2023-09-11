@@ -1,0 +1,29 @@
+*{
+     margin: 0;
+      padding: 0;
+    box-sizing: content-box;
+}
+
+a{
+     text-decoration: none;
+}
+
+li{
+     list-style-type: none;
+}
+
+@mixin flexCenter1{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+
+$colorWhite:white;
+$colorWhite2:#eee;
+$colorBlue: blue;
+$colorBlue2:rgba(51, 51, 240, 0.879);;
+$colorGray2:  #7a7777;
+$colorRed: orangered;
+
+$colorHoverBtn: rgb(55, 55, 171);
